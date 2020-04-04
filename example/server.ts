@@ -1,9 +1,9 @@
 import express from 'express'
 import Request from '../lib/RequestIndex'
-import config from '../lib/config'
+import routeObject from './config'
 
 const app = express();
-const mRequest= new Request(config);
+const mRequest= new Request(routeObject);
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));

@@ -1,4 +1,4 @@
-import types from "./enumType";
+import types from "../lib/enumType";
 
 const routeObject = {
     '/login': {

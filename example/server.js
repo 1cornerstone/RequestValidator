@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var RequestIndex_1 = __importDefault(require("../build/RequestIndex"));
-var config_1 = __importDefault(require("../build/config"));
+var config_1 = __importDefault(require("./config"));
 var app = express_1.default();
 var mRequest = new RequestIndex_1.default(config_1.default);
 app.use(express_1.default.json());

@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var enumType_1 = __importDefault(require("./enumType"));
+var enumType_1 = __importDefault(require("../build/enumType"));
 var routeObject = {
     '/login': {
         email: {
