@@ -5,7 +5,6 @@
     Email = "Email",
     Boolean = "Boolean",
     Float = "Float",
-    Array = "Array",
     Date = "Date"
 }
 

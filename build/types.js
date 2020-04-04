@@ -18,7 +18,7 @@ function isNumber(arg) {
 }
 exports.isNumber = isNumber;
 function isEmail(arg) {
-    return /^([a-z\d])+@([a-z])+.com$/i.test(arg);
+    return /^([a-z\d])+@([a-z])+(.com)$/i.test(arg);
 }
 exports.isEmail = isEmail;
 function isBool(arg) {

@@ -8,28 +8,25 @@ var routeObject = {
     '/login': {
         email: {
             type: enumType_1.default.Email,
-            min: 3,
-            max: 3
         },
         password: {
             type: enumType_1.default.String,
-            min: 3,
-            max: 8
+            min: 5,
+            max: 7
         },
-        username: {
-            type: enumType_1.default.String,
-        }
     },
     '/accountBalance': {
-        value: enumType_1.default.Number,
+        amount: { type: enumType_1.default.Number },
     },
-    'products': {
-        item: enumType_1.default.Array
-    },
-    'order': {
-        order: {
-            amount: enumType_1.default.Float,
-            date: enumType_1.default.Date
+    '/order': {
+        item: {
+            type: enumType_1.default.String
+        },
+        amount: {
+            type: enumType_1.default.Float
+        },
+        date: {
+            type: enumType_1.default.Date
         }
     }
 };

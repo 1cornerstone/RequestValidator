@@ -4,17 +4,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
-var body_parser_1 = __importDefault(require("body-parser"));
-var RequestIndex_1 = __importDefault(require("./RequestIndex"));
-var config_1 = __importDefault(require("./config"));
+var RequestIndex_1 = __importDefault(require("../build/RequestIndex"));
+var config_1 = __importDefault(require("../build/config"));
 var app = express_1.default();
 var mRequest = new RequestIndex_1.default(config_1.default);
-app.use(body_parser_1.default.json());
-app.use(body_parser_1.default.urlencoded({
-    extended: false
-}));
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: false }));
 app.use(mRequest.request());
-app.get('/', function (req, res) {
+app.get('/order', function (req, res) {
     res.send('gotten');
 });
 app.get('/login', function (req, res) {

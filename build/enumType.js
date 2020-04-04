@@ -7,7 +7,6 @@ var types;
     types["Email"] = "Email";
     types["Boolean"] = "Boolean";
     types["Float"] = "Float";
-    types["Array"] = "Array";
     types["Date"] = "Date";
 })(types || (types = {}));
 exports.default = types;

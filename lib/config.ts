@@ -1,34 +1,28 @@
 import types from "./enumType";
 
 const routeObject = {
-
     '/login': {
         email: {
             type : types.Email,
-            min:3,
-            max:3
             },
         password: {
             type :types.String,
-            min:3,
-            max: 8
+            min:5,
+            max:7
         },
-        username:{
-            type : types.String,
-        }
     },
-
     '/accountBalance':{
-        value : types.Number,
+        amount : {type:types.Number},
     },
-
-    'products':{
-        item : types.Array
-    },
-    'order':{
-        order:{
-            amount :types.Float,
-            date :types.Date
+    '/order':{
+        item:{
+            type: types.String
+        },
+        amount: {
+            type : types.Float
+        },
+        date:{
+            type: types.Date
         }
     }
 
